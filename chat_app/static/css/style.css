@@ -1,0 +1,14 @@
+body { font-family: Inter, system-ui, Arial; margin:0; background:#f5f7fb; color:#222; }
+.center { max-width:420px; margin:80px auto; text-align:center; }
+.card { display:flex; flex-direction:column; gap:8px; padding:16px; background:#fff; border-radius:8px; box-shadow:0 6px 20px rgba(20,20,50,0.06); }
+input, select { padding:8px 10px; border:1px solid #e6e9ef; border-radius:6px; }
+button { padding:8px 12px; border-radius:6px; border:none; background:#2b7cff; color:#fff; cursor:pointer; }
+.chat-wrapper { display:flex; height:100vh; }
+.sidebar { width:240px; padding:20px; background:#fff; border-right:1px solid #eee; box-sizing:border-box; }
+.chat-main { flex:1; display:flex; flex-direction:column; padding:20px; box-sizing:border-box; }
+.messages { flex:1; overflow:auto; padding:10px; background:#fafbff; border-radius:8px; border:1px solid #f0f2f8; }
+.message { padding:6px 8px; margin-bottom:6px; background:#fff; border-radius:6px; box-shadow:0 1px 2px rgba(0,0,0,0.02); }
+.status { font-size:0.9rem; color:#666; text-align:center; margin:6px 0; }
+.message-form { display:flex; gap:8px; margin-top:12px; }
+.message-form input { flex:1; padding:10px; }
+.typing { font-size:0.9rem; color:#666; height:18px; margin-top:6px; }

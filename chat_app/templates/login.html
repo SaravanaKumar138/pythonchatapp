@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Chat — Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="center">
+    <h1>Welcome to Flask Chat</h1>
+    <form action="{{ url_for('chat') }}" method="post" class="card">
+      <label>
+        Username
+        <input name="username" required placeholder="Your name">
+      </label>
+      <label>
+        Room
+        <select name="room" required>
+          {% for r in rooms %}
+            <option value="{{ r }}">{{ r }}</option>
+          {% endfor %}
+          <option value="NewRoom">NewRoom</option>
+        </select>
+      </label>
+      <button type="submit">Join Chat</button>
+    </form>
+
+    <p style="text-align:center; font-size:0.9rem; color:#666;">
+      Simple demo. For production, use HTTPS, DB, auth, and input sanitization.
+    </p>
+  </main>
+</body>
+</html>
